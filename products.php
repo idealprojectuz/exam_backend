@@ -42,7 +42,7 @@ class Products
             move_uploaded_file($file_tmp, $upload_path);
         }
         $domen=DOMAIN;
-        $sql = "INSERT INTO `products`(`name`, `description`, `image`, `price`, `date`) VALUES ('$name','$description','{$domen}{$upload_path}', '$price', NOW())";
+        $sql = "INSERT INTO `products`(`name`, `description`, `image`, `price`, `date`) VALUES ('$name','$description','{$domen}/{$upload_path}', '$price', NOW())";
         $req = mysqli_query($con, $sql);
         if ($req) {
             $message['status'] = 200;
