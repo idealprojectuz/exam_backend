@@ -3,15 +3,16 @@
 include('products.php');
 include('config.php');
 // include('lib/getdata.php');
-$header = getallheaders();
-$message = [];
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 header('Content-Type: application/json; charset=utf-8');
+$headers = getallheaders();
+$message = [];
 
 $products = new Products;
 
-if (isset($header['API_KEY']) && $header['API_KEY'] == API_KEY) {
+if (isset($headers['Authorization']) && $headers['Authorization'] == API_KEY) 
+{
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $products->getproduct();
     } else if (($_SERVER['REQUEST_METHOD'] == 'POST')) {
