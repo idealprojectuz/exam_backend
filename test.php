@@ -2,5 +2,6 @@
 // echo '<pre>';
 // print_r($_SERVER);
 // echo '</pre>';
-phpinfo();
+echo base64_encode('@Hayotbek5096968');
+
 ?>
