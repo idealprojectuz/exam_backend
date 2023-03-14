@@ -38,7 +38,7 @@ class Products
             }
             $new_file_name = uniqid() . '.' . $file_extension;
             $upload_dir = "uploads/";
-            $upload_path = $upload_dir . $new_file_name;
+            $upload_path = DOMAIN.'/'.$upload_dir . $new_file_name;
             move_uploaded_file($file_tmp, $upload_path);
         }
 
