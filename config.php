@@ -4,5 +4,5 @@ define('DATABASE', 'backend.idealproject.uz');
 define('USERNAME', 'excellend');
 define('PASSWORD', '@Hayotbek5096968');
 define('DATEBASE', 'exam_backend');
-define('DOMAIN','https://backend.idealproject.uz');
+define('DOMAIN','https://backend.idealproject.uz/');
 ?>

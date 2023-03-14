@@ -3,6 +3,9 @@ class Products
 {
     public function getproduct()
     {
+        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Headers: *");
+
         header('Content-Type: application/json; charset=utf-8');
         $sql = 'SELECT * from products';
         $con = mysqli_connect(DATABASE, USERNAME, PASSWORD, DATEBASE);
@@ -16,6 +19,8 @@ class Products
     }
     public function newproduct($requests = null, $imagerequests = null)
     {
+        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Headers: *");
         header('Content-Type: application/json; charset=utf-8');
         $message = [];
         $con = mysqli_connect(DATABASE, USERNAME, PASSWORD, DATEBASE);
