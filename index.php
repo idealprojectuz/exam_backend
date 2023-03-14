@@ -7,6 +7,8 @@ $header = getallheaders();
 $message = [];
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
+header('Content-Type: application/json; charset=utf-8');
+
 $products = new Products;
 
 if (isset($header['API_KEY']) && $header['API_KEY'] == API_KEY) {
@@ -20,8 +22,6 @@ if (isset($header['API_KEY']) && $header['API_KEY'] == API_KEY) {
     $message['message'] = 'not authentification';
     echo json_encode($message, JSON_PRETTY_PRINT);
 }
-// echo '<pre>';
-// var_dump($_SERVER);
-// echo '</pre>';
+
 
 ?>
