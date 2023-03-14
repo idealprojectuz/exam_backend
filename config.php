@@ -5,3 +5,5 @@ define('USERNAME', 'root');
 define('PASSWORD', '');
 define('DATEBASE', 'products');
 define('DOMAIN', 'localhost:8080');
+
+?>

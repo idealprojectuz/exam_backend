@@ -4,3 +4,6 @@
 // echo '</pre>';
 $current_directory = dirname(__FILE__);
 echo $current_directory;
+
+
+?>

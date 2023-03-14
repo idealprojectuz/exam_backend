@@ -23,3 +23,5 @@ if (isset($header['API_KEY']) && $header['API_KEY'] == API_KEY) {
 // echo '<pre>';
 // var_dump($_SERVER);
 // echo '</pre>';
+
+?>
