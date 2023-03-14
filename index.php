@@ -10,7 +10,6 @@ $headers = getallheaders();
 $message = [];
 
 $products = new Products;
-
 if (isset($headers['Authorization']) && $headers['Authorization'] == API_KEY) 
 {
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
